@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tailwind Pre-Defined Styles */
+
+.no-style-btn {
+	@apply cursor-pointer hover:opacity-50 transition-opacity;
+}
+
+.navbar-link-underline {
+	@apply w-full h-[1.5px] bg-black;
+}

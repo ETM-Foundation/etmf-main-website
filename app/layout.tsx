@@ -1,5 +1,6 @@
+import Footer from "@/components/Footer";
 import "./globals.css";
-import NavigationBar from "@/components/Home/NavigationBar";
+import NavigationBar from "@/components/NavigationBar";
 
 export default function RootLayout({
 	children,
@@ -14,7 +15,7 @@ export default function RootLayout({
 				<meta name="apple-mobile-web-app-title" content="ETM Foundation" />
 			</head>
 
-			<body className="h-auto w-full">
+			<body className="h-auto w-full lato-regular">
 				<main className="min-h-[100vw] w-full">
 					<NavigationBar />
 
@@ -23,7 +24,7 @@ export default function RootLayout({
 					</div>
 				</main>
 
-				<footer className="bg-gray-500 h-80 w-full"></footer>
+				<Footer />
 			</body>
 		</html>
 	);

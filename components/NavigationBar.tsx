@@ -40,7 +40,6 @@ export default function NavigationBar(): React.ReactElement {
 			<nav className="bg-[rgba(255,255,255,0.5)] backdrop-blur-md h-fit w-full sticky top-0 left-0 text-black z-50 px-5 sm:px-10 py-4">
 				{/* Tablet/Desktop Navigation Bar */}
 				<div className="hidden md:flex w-full h-fit flex-row justify-between items-center gap-4">
-					{/* Render the logo */}
 					<Image
 						className="object-cover w-auto h-full"
 						src="/etm_foundation_text_black.png"
@@ -69,7 +68,6 @@ export default function NavigationBar(): React.ReactElement {
 				{/* Mobile Navigation Bar */}
 				<div className="flex md:hidden w-full h-fit flex-col justify-between items-center gap-4">
 					<div className="flex flex-row justify-between items-center gap-4 w-full">
-						{/* Render the logo */}
 						<Image
 							src="/etm_foundation_logo.png"
 							alt="logo"
@@ -79,7 +77,6 @@ export default function NavigationBar(): React.ReactElement {
 						/>
 
 						<>
-							{/* Open & Close Navbar */}
 							{openMobileNavbar ? (
 								<button
 									onClick={handleOpenMobileNavbar}

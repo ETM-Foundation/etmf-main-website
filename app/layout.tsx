@@ -1,6 +1,7 @@
-import Footer from "@/components/Footer";
 import "./globals.css";
+import Footer from "@/components/Footer/Footer";
 import NavigationBar from "@/components/NavigationBar";
+import AIAssistant from "@/components/AIAssistant/AIAssistant";
 
 export default function RootLayout({
 	children,
@@ -16,10 +17,11 @@ export default function RootLayout({
 			</head>
 
 			<body className="h-auto w-full lato-regular">
-				<main className="min-h-[100vw] w-full">
+				<main className="min-h-[100vw] w-full relative">
 					<NavigationBar />
+					<AIAssistant />
 
-					<div className="w-full h-auto border-4 border-red-500 p-10 relative">
+					<div className="w-full h-auto border-4 border-[#104030] p-10 relative">
 						{children}
 					</div>
 				</main>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import Image from "next/image";
+import Image from "next/image";
 
 export const metadata: Metadata = {
 	title: "Home",
@@ -10,7 +10,11 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<>
-			<div></div>
+			<div className="w-full grid grid-cols-2 gap-5">
+				<div className="w-full h-fit flex flex-col gap-5"></div>
+
+				<div className="w-full relative"></div>
+			</div>
 		</>
 	);
 }

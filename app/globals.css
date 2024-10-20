@@ -8,12 +8,63 @@
 
 /* Tailwind Pre-Defined Styles */
 
+.text-yellow {
+	@apply text-[#FFD700];
+}
+
+/* Mostly Used For Btns */
+.text-green-1 {
+	@apply text-[#4BF2C7];
+}
+
+/* Mostly Used For Backgrounds */
+.text-green-2 {
+	@apply text-[#7CDAC2];
+}
+.text-green-3 {
+	@apply text-[#0B7955];
+}
+.text-green-4 {
+	@apply text-[#104030];
+}
+
+.bg-yellow {
+	@apply bg-[#FFD700];
+}
+
+/* Mostly Used For Btns */
+.bg-green-1 {
+	@apply bg-[#4BF2C7];
+}
+
+/* Mostly Used For Backgrounds */
+.bg-green-2 {
+	@apply bg-[#7CDAC2];
+}
+.bg-green-3 {
+	@apply bg-[#0B7955];
+}
+.bg-green-4 {
+	@apply bg-[#104030];
+}
+
+.title-1 {
+	@apply text-5xl;
+}
+
 .no-style-btn {
-	@apply cursor-pointer hover:opacity-50 transition-opacity;
+	@apply cursor-pointer hover:opacity-70 transition-opacity;
+}
+.styled-btn {
+	@apply cursor-pointer bg-[#4BF2C7] px-4 py-2 hover:opacity-70 transition-all rounded-lg;
 }
 
 .navbar-link-underline {
 	@apply w-full h-[1.5px] bg-black;
+}
+
+.input-field-style {
+	@apply rounded-lg px-4 py-2 outline-none w-full;
 }
 
 /* CSS Pre-Defined Styles */
